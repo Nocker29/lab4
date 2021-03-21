@@ -59,3 +59,28 @@
 # print(ciagi.policz_elementy())
 # ciagi.pobierz_parametry(1,2,5)
 # print(ciagi.policz_elementy())
+
+# #zad6
+# class Robaczek:
+#     def __init__(self,x,y,krok):
+#         self.x=x
+#         self.y=y
+#         self.krok=krok
+#     def idz_w_gore(self,ile_krokow):
+#         self.y+=(ile_krokow*self.krok)
+#     def idz_w_dol(self,ile_krokow):
+#         self.y-=(ile_krokow*self.krok)
+#     def idz_w_lewo(self,ile_krokow):
+#         self.x-=(ile_krokow*self.krok)
+#     def idz_w_prawo(self, ile_krokow):
+#         self.x+=(ile_krokow*self.krok)
+#     def pokaz_gdzie_jestes(self):
+#         return self.x,self.y
+# gra=Robaczek(0,0,1)
+# print(gra.pokaz_gdzie_jestes())
+# gra.idz_w_prawo(5)
+# gra.idz_w_gore(10)
+# print(gra.pokaz_gdzie_jestes())
+# gra.idz_w_lewo(15)
+# gra.idz_w_dol(50)
+# print(gra.pokaz_gdzie_jestes())
