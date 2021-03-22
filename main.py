@@ -9,6 +9,14 @@
 # print(plik.read())
 # plik.close()
 
+# # zad3
+# with open('zad1.txt','r+') as plik:
+#     plik.write("Zapisany tekst do pliku ")
+#
+# with open('zad1.txt','r') as plik:
+#     zawartosc=plik.read()
+# print(zawartosc)
+
 # #zad4
 # class NaZakupy:
 #     def __init__(self,nazwa,ilosc,jednostka,cena):
@@ -32,33 +40,39 @@
 # print(zakupy.ile_kosztuje())
 
 # #zad5
-# class ciagi_arytmetyczne:
-#     def __init__(self,ciag):
-#         self.ciag=ciag
-#         self.a1=''
-#         self.r=''
-#     def wyswietl_dane(self):
-#         return self.ciag
-#     def pobierz_parametry(self,a1,r,ilosc):
-#         self.a1=a1
-#         self.r=r
-#         self.ilosc=ilosc
+# class CiagArytmetyczny():
+#     def __init__(self):
+#         self.a1 = None
+#         self.r = None
+#         self.n = None
+#         self.ciag = []
+#     def wyświetl_dane(self):
+#         for elem in self.ciag:
+#             print(elem)
+#     def pobierz_elementy(self):
+#         while True:
+#             element = input("Podaj liczbę lub wpisz 'koniec': ")
+#             if element != 'koniec':
+#                 self.ciag.append(float(element))
+#             else:
+#                 break
+#     def pobierz_parametry(self):
+#         a = input("Wprowadź parametr a: ")
+#         self.a1 = int(a)
+#         r = input("Wprowadź parametr r: ")
+#         self.r = int(r)
+#         n = input("Wprowadź parametr n: ")
+#         self.n = int(n)
 #     def policz_sume(self):
-#         suma=0
-#         for x in range(0,len(self.ciag),1):
-#             suma+=self.ciag[x]
-#         return suma
+#         return sum(self.ciag)
 #     def policz_elementy(self):
-#         if (self.a1!='' & self.r!=''):
-#             return len(self.ciag)
-#         else:
-#             return 'Nie ma podanych a1 i r'
-# ciag=[1,3,5,7,9]
-# ciagi=ciagi_arytmetyczne(ciag)
-# print(ciagi.policz_sume())
-# print(ciagi.policz_elementy())
-# ciagi.pobierz_parametry(1,2,5)
-# print(ciagi.policz_elementy())
+#         if (self.a1 is not None) & (self.r is not None) & (self.n is not None): # lub if None not in self.__dict__.values():
+#             indeks = 1
+#             self.ciag.append(self.a1)
+#             while indeks != self.n:
+#                 self.a1 += self.r
+#                 self.ciag.append(self.a1)
+#                 indeks += 1
 
 # #zad6
 # class Robaczek:

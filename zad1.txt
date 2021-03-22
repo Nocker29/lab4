@@ -1,4 +1,4 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Zapisany tekst do pliku et, consectetur adipiscing elit.
 Aliquam aliquam tellus diam, et hendrerit massa ultrices eu.
 Sed sem urna, porttitor at viverra sed, malesuada nec libero.
 Quisque commodo iaculis sapien. Vestibulum congue varius elementum.
